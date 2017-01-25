@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	</head>
+
+	<body>
+		<button id="click-me">Lorenzo Llamas </button>
+
+		<script type="text/javascript">
+			document.getElementById('click-me').addEventListener('click', handleClick);
+			document.getElementById('click-me').addEventListener('click', myAlert)
+			function handleClick(e)  { //e for event
+				//change background color
+				document.body.style.backgroundImage = "url('http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/magic-marker-icons-alphanumeric/114579-magic-marker-icon-alphanumeric-letter-ll.png')";
+			}
+
+			function myAlert() {
+				var date = Date();
+				alert(date)
+			}
+		</script>
+	</body>
+
+
+</html>
