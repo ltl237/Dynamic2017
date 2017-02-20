@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table class="table" style="width: 15%; margin-left: 4em; margin-top: 2em;">
+		<thead class="thead-inverse">
+			<tr>
+				<th style="font-size: 22px;">{{player.name}}</th>
+			</tr>
+			<tr>
+				<th style="font-size: 18px;">{{player.pts}} points</th>
+			</tr>
+			<tr>
+				<th style="font-size: 18px;">{{player.ast}} assists</th>
+			</tr>
+			<tr>
+				<th style="font-size: 18px;">{{player.reb}} rebounds</th>
+			</tr>
+			<tr>
+				<th style="font-size: 18px; width:20%"><p style="width: 20%; border:1px solid red;">{{player.fantasy}}</p> Fantasy Points</th>
+			</tr>
+		</thead>
+	</table>
+<!-- 	<h1>{{player.name}}</h1>
+	<h3>Points: {{player.pts}}</h3>
+	<h3>Assists: {{player.ast}}</h3>
+	<h3>Rebounds: {{player.reb}}</h3>
+	<h3>Fantasy Point Total: {{player.fantasy}}</h3>
+ -->
+	<h4 style="margin-left: 4em;"><a style="padding:2px; border: 1px solid blue; border-radius: 5px;" href="/{{player.name}}/delete">Delete this player</h4>
+
+</body>
+</html>
+

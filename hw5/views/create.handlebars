@@ -1,0 +1,21 @@
+{{#if message}}
+<p style="background-color: red">{{message}}</p>
+{{/if}}
+
+<form action="create" method="POST">
+	<div>
+		<input type="text" placeholder="Player Name" name="name" value="{{player.name}}">
+	</div>
+	<div>
+		<input type="text" placeholder="Points" name="pts" value="{{player.pts}}">
+	</div>
+	<div>
+		<input type="text" placeholder="Assists" name="ast" value="{{player.ast}}">
+	</div>
+	<div>
+		<input type="text" placeholder="Rebounds" name="reb" value="{{player.reb}}">
+	</div>
+	<div>
+		<input type="submit" value="Create!">
+	</div>
+</form>

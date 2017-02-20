@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.container {
+			text-align: center;
+		}
+		th {
+			text-align: center;
+		}
+		table {
+			font-size: 20px;
+		}
+		.dropdown {
+			text-align: left;
+			font-size: 5px;
+			/*width: 10%;*/
+		}
+		.button {
+			font-size: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron" style="width: 100%;">
+				<h1> Here is a list of your players!</h1>
+				<h2><a href="/create"> Create One!</a></h2>
+
+		</div>
+	</div>
+
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Player Name</th>
+				<th># of Points</th>
+				<th># of Assists</th>
+				<th># of Rebounds</th>
+				<th>Total Fantasy Points</th>
+			</tr>
+			<tbody>
+				{{#each players}}
+					<tr>
+						<th> 
+						
+						<a href="/{{name}}">{{name}}</a>
+						</th>
+						<th> {{pts}}</th>
+						<th> {{ast}}</th>
+						<th> {{reb}}</th>
+						<th> {{fantasy}}</th>
+					</tr>
+				{{/each}}
+			</tbody>
+		</thead>
+	</table>
+<!-- 	{{#each players}}
+		<div>
+			<a href="/{{name}}">{{name}}</a> | Assists: {{ast}}, Rebounds: {{reb}}, Fantasy Points: {{fantasy}} 
+		</div>
+
+<div class="dropdown">
+							  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								options
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Delete</a>
+							</div>
+						</div>
+
+
+	{{/each}}
+ -->
+</body>
+</html>
+
